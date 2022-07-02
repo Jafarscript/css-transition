@@ -1,0 +1,91 @@
+.flex{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change{
+    padding: 10px 50px;
+    border: 1px solid red;
+    position: relative;
+    /* animation: lale 5s infinite; */
+}
+
+
+
+.change::after{
+    content: 'My nane';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    color: wheat;
+    transition: opacity 2s ease-in;
+    width: 100%;
+    height: 100%;
+    animation: lala 10s infinite;
+    background-color: black;
+}
+
+@keyframes lala{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.change::before{
+    content: 'My jafar';
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    left: 0;
+    transition: opacity 2s ease-in;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    animation: lalo 10s infinite;
+}
+
+@keyframes lalo{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
